@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<style>
+			.x{
+			position:absolute;
+				width:30%;
+				height:80%;
+				background-color:#EB984E;
+				top:50;
+				left:50;
+				border: 20px #85C1E9;
+				border-radius: 50px;
+			}
+			.y{
+			 margin-left:100;
+			 font-size:20px;
+			}
+			body{
+			background-image:url(https://www.wur.nl/upload_mm/8/a/c/2538ed0c-1e9f-402a-bc2c-e73be10ff8fd_13191524_s_e8126203_490x330.jpg);
+			background-size:cover;
+			background-repeat:no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+	     <div class="x">
+		 <form class="y" action="login.html">
+			<h1><b>SignUp</b></h1>
+		    <b><label>FirstName:</label></b>
+			<input type="fn" id="f" /></br></br>
+			<b><label>LastName:</label></b>
+			<input type="ln" id="l" /></br></br>
+			<b><label>UserName:</label></b>
+			<input type="email" id="u" /></br></br>
+			<b><label>Password:</label></b>
+			<input type="password" id="p" /></br></br>
+			<label><b>ConfirmPassword:</label></b></b>
+			<input type="password" id="p1" /></br></br>
+			<input type="submit" value="login" onclick="fun()"/></br>
+			<label id="t"></label>
+		</form>
+		
+		 </div>
+		 <script>
+		   function fun()
+		   {
+				localStorage.setItem("Username",document.getElementById("u").value);localStorage.setItem("Password",document.getElementById("p").value);
+				window.location="login.html";				
+		   }
+		   </script>
+	</body>
+</html>

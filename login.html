@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<style>
+			.x{
+			position:absolute;
+				width:40%;
+				height:40%;
+				background-color:#D6EAF8  ;
+				top:200;
+				left:80;
+				border: 20px #D0ECE7;
+				border-radius: 175px;
+			}
+			body{
+			background-image:url(http://money.ziyanpay.in/website/1503631466_all%20mobile%20recharge.jpg);
+			background-size:cover;
+			background-repeat:no-repeat;
+			
+			
+		</style>
+	</head>
+	<body >
+	     <div class="x"><center>
+		 <form id="f">
+			</br></br>
+			<h1><b>Login</b></h1>
+		    <b><label>Username:</label></b>
+			<input type="email" id="e" /></br></br>
+			<b><label>Password:</label></b>
+			<input type="password" id="p" /></br></br>
+			<input type="button" value="login" onclick="fun()"/></br>
+			<a href="signup.html" target="_self" style="text-decoration:none;"><h2>New user Registraton</h2>
+		</form>
+		</center>
+		 </div>
+		 <script>
+		   function fun()
+		   {
+		   	
+				var x=document.getElementById("e").value;
+				var y=document.getElementById("p").value;
+				var u=localStorage.getItem("Username");
+				var p=localStorage.getItem("Password");
+				if(x==u)
+				{
+				  if(y==p)
+				  {
+				    location.href = "innerhome.html";
+				  }
+				  else
+				   alert("enter valid password");
+				}
+				else
+				   alert("Invalid Credentails");
+		   }
+		   </script>
+	</body>
+</html>
